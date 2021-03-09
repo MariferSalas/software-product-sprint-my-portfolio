@@ -5,6 +5,7 @@
     <title>Mariafernanda Salas</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="scriptFetch.js"></script>
   </head>
   <body>
     <div id="content">
@@ -81,6 +82,21 @@
         <img src="images/PUMM.png" alt="PUMM"/>
         <img src="images/AXT2020.jpeg" alt="AXT 2020"/>
       </div>
+
+      <h3>Random Lyrics with Fetch</h3>
+      <p>Click this button to see random lyrics from Taylor Swift.</p>
+      <button onclick="showRandomLyrics();">
+        Get lyrics
+      </button>
+      <p id="lyrics-container"></p>
+
+      <h3>Jokes Section</h3>
+      <form action="/form-handler" method="POST">
+            <p>Tell me your favorite joke:</p>
+            <textarea name="text-input">Lol</textarea>
+            <br/>
+            <input type="submit" />
+      </form>
     </div>
   </body>
 </html>
