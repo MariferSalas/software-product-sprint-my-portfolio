@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="scriptFetch.js"></script>
+    <script src="scriptTranslation.js"></script>
   </head>
   <body>
     <div id="content">
@@ -21,8 +22,8 @@
         My hobbies include photography (pretty much about nature and landscapes), listening to music and watching series. 
         <br><br>
         For a couple of years, I've loved to be part of student clubs related to my career, teaching programming fundamentals to middle schoolers and participating at the hacking community of MLH as a hackathon's organizer    
-      </p> 
-    
+      </p>
+
       <div class="socialProfiles">
         <h3>Social Profiles </h3>
         <p>
@@ -39,7 +40,7 @@
         </p>
         
         <h3>Random Quotes</h3>
-      </div>
+        </div>
         
         <p>Click here to get a random quote from my favorite TV Show (Grey's Anatomy):</p>
         <button onclick="addRandomGreeting()">Get Quote</button>
@@ -97,6 +98,22 @@
             <br/>
             <input type="submit" />
       </form>
+
+      <h3>Translation</h3>
+        <p>Select a language, then click the button to translate it.</p>
+        <textarea id="text"></textarea>
+        <br><br>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="zh">Chinese</option>
+            <option value="es">Spanish</option>
+            <option value="hi">Hindi</option>
+            <option value="ar">Arabic</option>
+        </select>
+        <br><br>
+        <button onclick="requestTranslation();">Translate</button>
+        <br><br>
+        <div id="result"></div>
     </div>
   </body>
 </html>
