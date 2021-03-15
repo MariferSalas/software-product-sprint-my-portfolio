@@ -26,6 +26,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/translate")
 public class TranslationServlet extends HttpServlet {
 
+    //Gets the request (text to be translated and the language to be translated in) from the requestTranslation
+    //And create a response (the text already being translated)
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     // Get the request parameters.
